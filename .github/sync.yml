@@ -1,0 +1,15 @@
+void-linux/void-packages:
+  - source: /
+    dest: void/
+
+Makrennel/hyprland-void:
+  - source: /
+    dest: hyprland/
+
+index-0/librewolf-void:
+  - source: /
+    dest: librewolf/
+
+mobinmob/abyss-packages:
+  - source: /
+    dest: abyss/
