@@ -19,33 +19,38 @@ jobs:
           echo "$HYPRLAND"
           LIBREWOLF=$(curl https://api.github.com/repos/index-0/librewolf-void/contents | jq -r '.[] | "\(.name) (\(.type))"' | cut -d' ' -f1)
           echo "$LIBREWOLF"
-          ABYSS=$(curl https://api.github.com/repos/mobinmob/abyss-packages/contents | jq -r '.[] | "\(.name) (\(.type))"' | grep '(dir)' | cut -d' ' -f1)
+          ABYSS=$(curl https://api.github.com/repos/mobinmob/abyss-packages/contents | jq -r '.[] | "\(.name) (\(.type))"' | cut -d' ' -f1)
           echo "$ABYSS"
           echo "void-linux/void-packages@master:" > .github/sync.yml
           echo "  - source:" >> .github/sync.yml
-          echo "    $VOID" >> .github/sync.yml
+          for item in $VOID; do
+            echo "    - $item" >> .github/sync.yml
+          done
           echo "    dest: void/" >> .github/sync.yml
           echo "    with:" >> .github/sync.yml
           echo "BRANCH_PREFIX: void" >> .github/sync.yml
           echo '' >> .github/sync.yml
           echo "Makrennel/hyprland-void@master:" >> .github/sync.yml
-          echo "  - source: $HYPRLAND" >> .github/sync.yml
-          #echo "    $HYPRLAND" >> .github/sync.yml
+          echo "  - source:" >> .github/sync.yml
+          for item in $HYPRLAND; do
+            echo "   - $item" >> .github/sync.yml
+          done
           echo "    dest: hyprland/" >> .github/sync.yml
           echo "    with:" >> .github/sync.yml
           echo "      BRANCH_PREFIX: hyprland" >> .github/sync.yml
           echo '' >> .github/sync.yml
           echo "index-0/librewolf-void@master:" >> .github/sync.yml
-          echo "  - source: $LIBREWOLF" >> .github/sync.yml
-          #echo "    $LIBREWOLF" >> .github/sync.yml
+          echo "  - source:" >> .github/sync.yml
+          for item in $LIBREWOLF; do
+            echo "    - $item" >> .github/sync.yml
           echo "    dest: librewolf/" >> .github/sync.yml
           echo "    with:" >> .github/sync.yml
           echo "      BRANCH_PREFIX: librewolf" >> .github/sync.yml
           echo '' >> .github/sync.yml
           echo "mobinmob/abyss-packages@main:" >> .github/sync.yml
           echo "  - source:" >> .github/sync.yml
-          for dir in $ABYSS; do
-            echo "    - $dir" >> .github/sync.yml
+          for item in $ABYSS; do
+            echo "    - $item" >> .github/sync.yml
           done
           echo "    dest: abyss/" >> .github/sync.yml
           echo "    with:" >> .github/sync.yml
