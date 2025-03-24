@@ -27,7 +27,6 @@ void-linux/void-packages@master:
     dest: srcpkgs
   - source: xbps-src
     dest: xbps-src
-    dest: void/
     with:
       BRANCH_PREFIX: void
 
@@ -44,7 +43,6 @@ Makrennel/hyprland-void@master:
     dest: scripts
   - source: srcpkgs
     dest: srcpkgs
-    dest: hyprland/
     with:
       BRANCH_PREFIX: hyprland
 
@@ -55,7 +53,6 @@ index-0/librewolf-void@master:
     dest: README.md
   - source: srcpkgs
     dest: srcpkgs
-    dest: librewolf/
     with:
       BRANCH_PREFIX: librewolf
 
@@ -140,6 +137,5 @@ mobinmob/abyss-packages@main:
     dest: waterfox
   - source: zuki-themes
     dest: zuki-themes
-    dest: abyss/
     with:
       BRANCH_PREFIX: abyss
