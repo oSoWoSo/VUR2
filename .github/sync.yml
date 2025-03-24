@@ -1,86 +1,82 @@
 void-linux/void-packages@master:
-  - source:
-    - .dockerignore
-    - .editorconfig
-    - .gitattributes
-    - .github
-    - .gitignore
-    - .mailmap
-    - CONTRIBUTING.md
-    - COPYING
-    - Manual.md
-    - README.md
-    - common
-    - etc
-    - srcpkgs
-    - xbps-src
+  - .dockerignore
+  - .editorconfig
+  - .gitattributes
+  - .github
+  - .gitignore
+  - .mailmap
+  - CONTRIBUTING.md
+  - COPYING
+  - Manual.md
+  - README.md
+  - common
+  - etc
+  - srcpkgs
+  - xbps-src
     dest: void/
     with:
 BRANCH_PREFIX: void
 
 Makrennel/hyprland-void@master:
-  - source:
-   - .github
-   - COPYING
-   - README.md
-   - common
-   - scripts
-   - srcpkgs
+  - .github
+  - COPYING
+  - README.md
+  - common
+  - scripts
+  - srcpkgs
     dest: hyprland/
     with:
       BRANCH_PREFIX: hyprland
 
 index-0/librewolf-void@master:
-  - source:
-    - .github
-    - README.md
-    - srcpkgs
+  - .github
+  - README.md
+  - srcpkgs
     dest: librewolf/
     with:
       BRANCH_PREFIX: librewolf
 
 mobinmob/abyss-packages@main:
-  - source:
-    - AppImageLauncher
-    - Webex
-    - adw-gtk3
-    - base16-geany-git
-    - base16-xfce4-terminal-git
-    - basilisk-beta
-    - betterbird
-    - brave-browser
-    - cudatext
-    - duplicati-beta-bin
-    - easybashgui
-    - fasd
-    - flat-remix-gtk
-    - font-JetBrainsMono
-    - font-cascadia-code-ttf
-    - font-mgopen-ttf
-    - fopnu
-    - geany-themes-git
-    - gtkgreet-git
-    - materia-theme
-    - microsoft-edge-stable
-    - moksha
-    - nano-syntax-highlighting
-    - palemoon
-    - proggyfonts
-    - quickemu
-    - seamonkey
-    - smartgit
-    - softmaker-freeoffice-2018
-    - softmaker-freeoffice-2021
-    - softmaker-freeoffice-2024
-    - soulseekqt-bin
-    - teamviewer
-    - thunderbird-bin
-    - tixati
-    - unmaintained_templates
-    - vesktop
-    - vuescan
-    - waterfox
-    - zuki-themes
+  - AppImageLauncher
+  - Webex
+  - adw-gtk3
+  - base16-geany-git
+  - base16-xfce4-terminal-git
+  - basilisk-beta
+  - betterbird
+  - brave-browser
+  - cudatext
+  - duplicati-beta-bin
+  - easybashgui
+  - fasd
+  - flat-remix-gtk
+  - font-JetBrainsMono
+  - font-cascadia-code-ttf
+  - font-mgopen-ttf
+  - fopnu
+  - geany-themes-git
+  - gtkgreet-git
+  - materia-theme
+  - microsoft-edge-stable
+  - moksha
+  - nano-syntax-highlighting
+  - palemoon
+  - proggyfonts
+  - quickemu
+  - seamonkey
+  - smartgit
+  - softmaker-freeoffice-2018
+  - softmaker-freeoffice-2021
+  - softmaker-freeoffice-2024
+  - soulseekqt-bin
+  - teamviewer
+  - thunderbird-bin
+  - tixati
+  - unmaintained_templates
+  - vesktop
+  - vuescan
+  - waterfox
+  - zuki-themes
     dest: abyss/
     with:
       BRANCH_PREFIX: abyss
