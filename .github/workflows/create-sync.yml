@@ -1,4 +1,4 @@
-name: Sync Files
+name: Create sync.yml
 on:
   push:
     branches:
