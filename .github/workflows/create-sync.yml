@@ -1,0 +1,49 @@
+name: Create sync
+on:
+  push:
+    branches:
+      - main
+      - master
+  workflow_dispatch:
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@main
+      - name: prepare
+        run: |
+          VOID=$(curl https://api.github.com/repos/mobinmob/abyss-packages/contents | jq -r '.[] | "\(.name) (\(.type))"')
+          HYPRLAND=$(curl https://api.github.com/repos/mobinmob/abyss-packages/contents | jq -r '.[] | "\(.name) (\(.type))"')
+          LIBREWOLF=$(curl https://api.github.com/repos/mobinmob/abyss-packages/contents | jq -r '.[] | "\(.name) (\(.type))"')
+          ABYSS=$(curl https://api.github.com/repos/mobinmob/abyss-packages/contents | jq -r '.[] | "\(.name) (\(.type))"')
+          cat << EOF > .github/sync.yml
+void-linux/void-packages@master:
+  - source:
+    "$VOID"
+    dest: void/
+    with:
+      BRANCH_PREFIX: void
+
+Makrennel/hyprland-void@master:
+  - source:
+    "$HYPRLAND"
+    dest: hyprland/
+    with:
+      BRANCH_PREFIX: hyprland
+
+index-0/librewolf-void@master:
+  - source:
+    "$LIBREWOLF"
+    dest: librewolf/
+    with:
+      BRANCH_PREFIX: librewolf
+
+mobinmob/abyss-packages@main:
+  - source:
+    "$ABYSS"
+    dest: abyss/
+    with:
+      BRANCH_PREFIX: abyss
+EOF
+          echo "Done"
