@@ -3,7 +3,9 @@ on:
   push:
     branches:
       - main
-      - master
+    paths:
+      - .github/sync.yml
+      
   workflow_dispatch:
 jobs:
   sync:
