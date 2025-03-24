@@ -29,7 +29,7 @@ void-linux/void-packages@master:
     dest: xbps-src
     dest: void/
     with:
-BRANCH_PREFIX: void
+      BRANCH_PREFIX: void
 
 Makrennel/hyprland-void@master:
   - source: .github
