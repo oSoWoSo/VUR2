@@ -21,32 +21,38 @@ jobs:
           echo "$LIBREWOLF"
           ABYSS=$(curl https://api.github.com/repos/mobinmob/abyss-packages/contents | jq -r '.[] | "\(.name) (\(.type))"')
           echo "$ABYSS"
-          cat << EOF > .github/sync.yml
-void-linux/void-packages@master:
-  - source:
-    - "$VOID"
-    dest: void/
-    with:
-      BRANCH_PREFIX: void
-
-Makrennel/hyprland-void@master:
-  - source:
-    - "$HYPRLAND"
-    dest: hyprland/
-    with:
-      BRANCH_PREFIX: hyprland
-
-index-0/librewolf-void@master:
-  - source:
-    - "$LIBREWOLF"
-    dest: librewolf/
-    with:
-      BRANCH_PREFIX: librewolf
-
-mobinmob/abyss-packages@main:
-  - source:
-    - "$ABYSS"
-    dest: abyss/
-    with:
-      BRANCH_PREFIX: abyss
-EOF
+          echo "void-linux/void-packages@master:" > .github/sync.yml
+          echo "  - source:" >> .github/sync.yml
+          echo "    $VOID" >> .github/sync.yml
+          echo "    dest: void/" >> .github/sync.yml
+          echo "    with:" >> .github/sync.yml
+          echo "BRANCH_PREFIX: void" >> .github/sync.yml
+          echo '' >> .github/sync.yml
+          echo "Makrennel/hyprland-void@master:" >> .github/sync.yml
+          echo "  - source:" >> .github/sync.yml
+          echo "    $HYPRLAND" >> .github/sync.yml
+          echo "    dest: hyprland/" >> .github/sync.yml
+          echo "    with:" >> .github/sync.yml
+          echo "      BRANCH_PREFIX: hyprland" >> .github/sync.yml
+          echo '' >> .github/sync.yml
+          echo "index-0/librewolf-void@master:" >> .github/sync.yml
+          echo "  - source:" >> .github/sync.yml
+          echo "    $LIBREWOLF" >> .github/sync.yml
+          echo "    dest: librewolf/" >> .github/sync.yml
+          echo "    with:" >> .github/sync.yml
+          echo "      BRANCH_PREFIX: librewolf" >> .github/sync.yml
+          echo '' >> .github/sync.yml
+          echo "mobinmob/abyss-packages@main:" >> .github/sync.yml
+          echo "  - source:" >> .github/sync.yml
+          echo "    $ABYSS" >> .github/sync.yml
+          echo "    dest: abyss/" >> .github/sync.yml
+          echo "    with:" >> .github/sync.yml
+          echo "      BRANCH_PREFIX: abyss" >> .github/sync.yml
+          echo 'Done'
+      - name: push
+        run: |
+          git config --global user.name x
+          git config --global user.email "noreply@github.com"
+          git add .github/sync.yml
+          git commit -m "create sync"
+          git push
