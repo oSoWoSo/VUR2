@@ -13,9 +13,9 @@ jobs:
         uses: actions/checkout@main
       - name: prepare
         run: |
-          VOID=$(curl https://api.github.com/repos/mobinmob/abyss-packages/contents | jq -r '.[] | "\(.name) (\(.type))"')
-          HYPRLAND=$(curl https://api.github.com/repos/mobinmob/abyss-packages/contents | jq -r '.[] | "\(.name) (\(.type))"')
-          LIBREWOLF=$(curl https://api.github.com/repos/mobinmob/abyss-packages/contents | jq -r '.[] | "\(.name) (\(.type))"')
+          VOID=$(curl https://api.github.com/repos/void-linux/void-packages/contents | jq -r '.[] | "\(.name)"')
+          HYPRLAND=$(curl https://api.github.com/repos/Makrennel/hyprland-void/contents | jq -r '.[] | "\(.name) (\(.type))"' | grep 'dir' | cut -d' ' -f1)
+          LIBREWOLF=$(curl https://api.github.com/repos/index-0/librewolf-void/contents | jq -r '.[] | "\(.name) (\(.type))"')
           ABYSS=$(curl https://api.github.com/repos/mobinmob/abyss-packages/contents | jq -r '.[] | "\(.name) (\(.type))"')
           cat << EOF > .github/sync.yml
 void-linux/void-packages@master:
@@ -24,21 +24,18 @@ void-linux/void-packages@master:
     dest: void/
     with:
       BRANCH_PREFIX: void
-
 Makrennel/hyprland-void@master:
   - source:
     "$HYPRLAND"
     dest: hyprland/
     with:
       BRANCH_PREFIX: hyprland
-
 index-0/librewolf-void@master:
   - source:
     "$LIBREWOLF"
     dest: librewolf/
     with:
       BRANCH_PREFIX: librewolf
-
 mobinmob/abyss-packages@main:
   - source:
     "$ABYSS"
