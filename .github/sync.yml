@@ -18,12 +18,18 @@ void-linux/void-packages@master:
 BRANCH_PREFIX: void
 
 Makrennel/hyprland-void@master:
-  - .github
-  - COPYING
-  - README.md
-  - common
-  - scripts
-  - srcpkgs
+  - source: .github
+    dest: .github
+  - source: COPYING
+    dest: COPYING
+  - source: README.md
+    dest: README.md
+  - source: common
+    dest: common
+  - source: scripts
+    dest: scripts
+  - source: srcpkgs
+    dest: srcpkgs
     dest: hyprland/
     with:
       BRANCH_PREFIX: hyprland
