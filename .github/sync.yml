@@ -1,5 +1,5 @@
 void-linux/void-packages@master:
-  - source: ./**
+  - source: ./*
     dest: void/
     with:
       BRANCH_PREFIX: void
