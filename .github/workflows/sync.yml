@@ -1,8 +1,6 @@
 name: Sync Files
 on:
   push:
-    branches:
-      - main
     paths:
       - .github/sync.yml
       
