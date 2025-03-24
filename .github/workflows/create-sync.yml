@@ -24,7 +24,8 @@ jobs:
           echo "void-linux/void-packages@master:" > .github/sync.yml
           #echo "  - source:" >> .github/sync.yml
           for item in $VOID; do
-            echo "  - $item" >> .github/sync.yml
+            echo "  - source: $item" >> .github/sync.yml
+            echo "    dest: $item" >> .github/sync.yml
           done
           echo "    dest: void/" >> .github/sync.yml
           echo "    with:" >> .github/sync.yml
@@ -43,7 +44,8 @@ jobs:
           echo "index-0/librewolf-void@master:" >> .github/sync.yml
           #echo "  - source:" >> .github/sync.yml
           for item in $LIBREWOLF; do
-            echo "  - $item" >> .github/sync.yml
+            echo "  - source: $item" >> .github/sync.yml
+            echo "    dest: $item" >> .github/sync.yml
           done
           echo "    dest: librewolf/" >> .github/sync.yml
           echo "    with:" >> .github/sync.yml
@@ -52,7 +54,8 @@ jobs:
           echo "mobinmob/abyss-packages@main:" >> .github/sync.yml
           #echo "  - source:" >> .github/sync.yml
           for dir in $ABYSS; do
-            echo "  - $dir" >> .github/sync.yml
+            echo "  - source: $dir" >> .github/sync.yml
+            echo "    dest: $dir" >> .github/sync.yml
           done
           echo "    dest: abyss/" >> .github/sync.yml
           echo "    with:" >> .github/sync.yml
