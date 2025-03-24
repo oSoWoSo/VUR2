@@ -43,6 +43,7 @@ jobs:
           echo "  - source:" >> .github/sync.yml
           for item in $LIBREWOLF; do
             echo "    - $item" >> .github/sync.yml
+          done
           echo "    dest: librewolf/" >> .github/sync.yml
           echo "    with:" >> .github/sync.yml
           echo "      BRANCH_PREFIX: librewolf" >> .github/sync.yml
