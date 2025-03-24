@@ -1,31 +1,31 @@
 void-linux/void-packages@master:
-  - source: ./.dockerignore
+  - source: ../.dockerignore
     dest: ./.dockerignore
-  - source: ./.editorconfig
+  - source: ../.editorconfig
     dest: ./.editorconfig
-  - source: ./.gitattributes
+  - source: ../.gitattributes
     dest: ./.gitattributes
-  - source: ./.github
+  - source: ../.github
     dest: ./.github
-  - source: ./.gitignore
+  - source: ../.gitignore
     dest: ./.gitignore
-  - source: ./.mailmap
+  - source: ../.mailmap
     dest: ./.mailmap
-  - source: ./CONTRIBUTING.md
+  - source: ../CONTRIBUTING.md
     dest: ./CONTRIBUTING.md
-  - source: ./COPYING
+  - source: ../COPYING
     dest: ./COPYING
-  - source: ./Manual.md
+  - source: ../Manual.md
     dest: ./Manual.md
-  - source: ./README.md
+  - source: ../README.md
     dest: ./README.md
-  - source: ./common
+  - source: ../common
     dest: ./common
-  - source: ./etc
+  - source: ../etc
     dest: ./etc
-  - source: ./srcpkgs
+  - source: ../srcpkgs
     dest: ./srcpkgs
-  - source: ./xbps-src
+  - source: ../xbps-src
     dest: ./xbps-src
     with:
       BRANCH_PREFIX: void
@@ -57,85 +57,85 @@ index-0/librewolf-void@master:
       BRANCH_PREFIX: librewolf
 
 mobinmob/abyss-packages@main:
-  - source: AppImageLauncher
+  - source: AppImageLauncher/
     dest: AppImageLauncher
-  - source: Webex
+  - source: Webex/
     dest: Webex
-  - source: adw-gtk3
+  - source: adw-gtk3/
     dest: adw-gtk3
-  - source: base16-geany-git
+  - source: base16-geany-git/
     dest: base16-geany-git
-  - source: base16-xfce4-terminal-git
+  - source: base16-xfce4-terminal-git/
     dest: base16-xfce4-terminal-git
-  - source: basilisk-beta
+  - source: basilisk-beta/
     dest: basilisk-beta
-  - source: betterbird
+  - source: betterbird/
     dest: betterbird
-  - source: brave-browser
+  - source: brave-browser/
     dest: brave-browser
-  - source: cudatext
+  - source: cudatext/
     dest: cudatext
-  - source: duplicati-beta-bin
+  - source: duplicati-beta-bin/
     dest: duplicati-beta-bin
-  - source: easybashgui
+  - source: easybashgui/
     dest: easybashgui
-  - source: fasd
+  - source: fasd/
     dest: fasd
-  - source: flat-remix-gtk
+  - source: flat-remix-gtk/
     dest: flat-remix-gtk
-  - source: font-JetBrainsMono
+  - source: font-JetBrainsMono/
     dest: font-JetBrainsMono
-  - source: font-cascadia-code-ttf
+  - source: font-cascadia-code-ttf/
     dest: font-cascadia-code-ttf
-  - source: font-mgopen-ttf
+  - source: font-mgopen-ttf/
     dest: font-mgopen-ttf
-  - source: fopnu
+  - source: fopnu/
     dest: fopnu
-  - source: geany-themes-git
+  - source: geany-themes-git/
     dest: geany-themes-git
-  - source: gtkgreet-git
+  - source: gtkgreet-git/
     dest: gtkgreet-git
-  - source: materia-theme
+  - source: materia-theme/
     dest: materia-theme
-  - source: microsoft-edge-stable
+  - source: microsoft-edge-stable/
     dest: microsoft-edge-stable
-  - source: moksha
+  - source: moksha/
     dest: moksha
-  - source: nano-syntax-highlighting
+  - source: nano-syntax-highlighting/
     dest: nano-syntax-highlighting
-  - source: palemoon
+  - source: palemoon/
     dest: palemoon
-  - source: proggyfonts
+  - source: proggyfonts/
     dest: proggyfonts
-  - source: quickemu
+  - source: quickemu/
     dest: quickemu
-  - source: seamonkey
+  - source: seamonkey/
     dest: seamonkey
-  - source: smartgit
+  - source: smartgit/
     dest: smartgit
-  - source: softmaker-freeoffice-2018
+  - source: softmaker-freeoffice-2018/
     dest: softmaker-freeoffice-2018
-  - source: softmaker-freeoffice-2021
+  - source: softmaker-freeoffice-2021/
     dest: softmaker-freeoffice-2021
-  - source: softmaker-freeoffice-2024
+  - source: softmaker-freeoffice-2024/
     dest: softmaker-freeoffice-2024
-  - source: soulseekqt-bin
+  - source: soulseekqt-bin/
     dest: soulseekqt-bin
-  - source: teamviewer
+  - source: teamviewer/
     dest: teamviewer
-  - source: thunderbird-bin
+  - source: thunderbird-bin/
     dest: thunderbird-bin
-  - source: tixati
+  - source: tixati/
     dest: tixati
-  - source: unmaintained_templates
+  - source: unmaintained_templates/
     dest: unmaintained_templates
-  - source: vesktop
+  - source: vesktop/
     dest: vesktop
-  - source: vuescan
+  - source: vuescan/
     dest: vuescan
-  - source: waterfox
+  - source: waterfox/
     dest: waterfox
-  - source: zuki-themes
+  - source: zuki-themes/
     dest: zuki-themes
     with:
       BRANCH_PREFIX: abyss
