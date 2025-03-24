@@ -58,3 +58,4 @@ jobs:
           git add .github/sync.yml
           git commit -m "create sync"
           git push
+          cat .github/sync.yml >> $GITHUB_STEP_SUMMARY
