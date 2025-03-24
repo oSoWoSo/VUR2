@@ -1,191 +1,86 @@
 void-linux/void-packages@master:
   - source:
-    AppImageLauncher (dir)
-LICENSE (file)
-README.md (file)
-Webex (dir)
-adw-gtk3 (dir)
-base16-geany-git (dir)
-base16-xfce4-terminal-git (dir)
-basilisk-beta (dir)
-betterbird (dir)
-brave-browser (dir)
-cudatext (dir)
-duplicati-beta-bin (dir)
-easybashgui (dir)
-fasd (dir)
-flat-remix-gtk (dir)
-font-JetBrainsMono (dir)
-font-cascadia-code-ttf (dir)
-font-mgopen-ttf (dir)
-fopnu (dir)
-geany-themes-git (dir)
-gtkgreet-git (dir)
-materia-theme (dir)
-microsoft-edge-stable (dir)
-moksha (dir)
-nano-syntax-highlighting (dir)
-palemoon (dir)
-proggyfonts (dir)
-quickemu (dir)
-seamonkey (dir)
-smartgit (dir)
-softmaker-freeoffice-2018 (dir)
-softmaker-freeoffice-2021 (dir)
-softmaker-freeoffice-2024 (dir)
-soulseekqt-bin (dir)
-teamviewer (dir)
-thunderbird-bin (dir)
-tixati (dir)
-unmaintained_templates (dir)
-vesktop (dir)
-vuescan (dir)
-waterfox (dir)
-zuki-themes (dir)
+    .dockerignore
+.editorconfig
+.gitattributes
+.github
+.gitignore
+.mailmap
+CONTRIBUTING.md
+COPYING
+Manual.md
+README.md
+common
+etc
+srcpkgs
+xbps-src
     dest: void/
     with:
 BRANCH_PREFIX: void
 
 Makrennel/hyprland-void@master:
   - source:
-    AppImageLauncher (dir)
-LICENSE (file)
-README.md (file)
-Webex (dir)
-adw-gtk3 (dir)
-base16-geany-git (dir)
-base16-xfce4-terminal-git (dir)
-basilisk-beta (dir)
-betterbird (dir)
-brave-browser (dir)
-cudatext (dir)
-duplicati-beta-bin (dir)
-easybashgui (dir)
-fasd (dir)
-flat-remix-gtk (dir)
-font-JetBrainsMono (dir)
-font-cascadia-code-ttf (dir)
-font-mgopen-ttf (dir)
-fopnu (dir)
-geany-themes-git (dir)
-gtkgreet-git (dir)
-materia-theme (dir)
-microsoft-edge-stable (dir)
-moksha (dir)
-nano-syntax-highlighting (dir)
-palemoon (dir)
-proggyfonts (dir)
-quickemu (dir)
-seamonkey (dir)
-smartgit (dir)
-softmaker-freeoffice-2018 (dir)
-softmaker-freeoffice-2021 (dir)
-softmaker-freeoffice-2024 (dir)
-soulseekqt-bin (dir)
-teamviewer (dir)
-thunderbird-bin (dir)
-tixati (dir)
-unmaintained_templates (dir)
-vesktop (dir)
-vuescan (dir)
-waterfox (dir)
-zuki-themes (dir)
+    .github
+COPYING
+README.md
+common
+scripts
+srcpkgs
     dest: hyprland/
     with:
       BRANCH_PREFIX: hyprland
 
 index-0/librewolf-void@master:
   - source:
-    AppImageLauncher (dir)
-LICENSE (file)
-README.md (file)
-Webex (dir)
-adw-gtk3 (dir)
-base16-geany-git (dir)
-base16-xfce4-terminal-git (dir)
-basilisk-beta (dir)
-betterbird (dir)
-brave-browser (dir)
-cudatext (dir)
-duplicati-beta-bin (dir)
-easybashgui (dir)
-fasd (dir)
-flat-remix-gtk (dir)
-font-JetBrainsMono (dir)
-font-cascadia-code-ttf (dir)
-font-mgopen-ttf (dir)
-fopnu (dir)
-geany-themes-git (dir)
-gtkgreet-git (dir)
-materia-theme (dir)
-microsoft-edge-stable (dir)
-moksha (dir)
-nano-syntax-highlighting (dir)
-palemoon (dir)
-proggyfonts (dir)
-quickemu (dir)
-seamonkey (dir)
-smartgit (dir)
-softmaker-freeoffice-2018 (dir)
-softmaker-freeoffice-2021 (dir)
-softmaker-freeoffice-2024 (dir)
-soulseekqt-bin (dir)
-teamviewer (dir)
-thunderbird-bin (dir)
-tixati (dir)
-unmaintained_templates (dir)
-vesktop (dir)
-vuescan (dir)
-waterfox (dir)
-zuki-themes (dir)
+    .github
+README.md
+srcpkgs
     dest: librewolf/
     with:
       BRANCH_PREFIX: librewolf
 
 mobinmob/abyss-packages@main:
   - source:
-    AppImageLauncher (dir)
-LICENSE (file)
-README.md (file)
-Webex (dir)
-adw-gtk3 (dir)
-base16-geany-git (dir)
-base16-xfce4-terminal-git (dir)
-basilisk-beta (dir)
-betterbird (dir)
-brave-browser (dir)
-cudatext (dir)
-duplicati-beta-bin (dir)
-easybashgui (dir)
-fasd (dir)
-flat-remix-gtk (dir)
-font-JetBrainsMono (dir)
-font-cascadia-code-ttf (dir)
-font-mgopen-ttf (dir)
-fopnu (dir)
-geany-themes-git (dir)
-gtkgreet-git (dir)
-materia-theme (dir)
-microsoft-edge-stable (dir)
-moksha (dir)
-nano-syntax-highlighting (dir)
-palemoon (dir)
-proggyfonts (dir)
-quickemu (dir)
-seamonkey (dir)
-smartgit (dir)
-softmaker-freeoffice-2018 (dir)
-softmaker-freeoffice-2021 (dir)
-softmaker-freeoffice-2024 (dir)
-soulseekqt-bin (dir)
-teamviewer (dir)
-thunderbird-bin (dir)
-tixati (dir)
-unmaintained_templates (dir)
-vesktop (dir)
-vuescan (dir)
-waterfox (dir)
-zuki-themes (dir)
+    AppImageLauncher
+Webex
+adw-gtk3
+base16-geany-git
+base16-xfce4-terminal-git
+basilisk-beta
+betterbird
+brave-browser
+cudatext
+duplicati-beta-bin
+easybashgui
+fasd
+flat-remix-gtk
+font-JetBrainsMono
+font-cascadia-code-ttf
+font-mgopen-ttf
+fopnu
+geany-themes-git
+gtkgreet-git
+materia-theme
+microsoft-edge-stable
+moksha
+nano-syntax-highlighting
+palemoon
+proggyfonts
+quickemu
+seamonkey
+smartgit
+softmaker-freeoffice-2018
+softmaker-freeoffice-2021
+softmaker-freeoffice-2024
+soulseekqt-bin
+teamviewer
+thunderbird-bin
+tixati
+unmaintained_templates
+vesktop
+vuescan
+waterfox
+zuki-themes
     dest: abyss/
     with:
       BRANCH_PREFIX: abyss
