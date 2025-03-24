@@ -1,32 +1,32 @@
 void-linux/void-packages@master:
-  - source: .dockerignore
-    dest: .dockerignore
-  - source: .editorconfig
-    dest: .editorconfig
-  - source: .gitattributes
-    dest: .gitattributes
-  - source: .github
-    dest: .github
-  - source: .gitignore
-    dest: .gitignore
-  - source: .mailmap
-    dest: .mailmap
-  - source: CONTRIBUTING.md
-    dest: CONTRIBUTING.md
-  - source: COPYING
-    dest: COPYING
-  - source: Manual.md
-    dest: Manual.md
-  - source: README.md
-    dest: README.md
-  - source: common
-    dest: common
-  - source: etc
-    dest: etc
-  - source: srcpkgs
-    dest: srcpkgs
-  - source: xbps-src
-    dest: xbps-src
+  - source: ./.dockerignore
+    dest: ./.dockerignore
+  - source: ./.editorconfig
+    dest: ./.editorconfig
+  - source: ./.gitattributes
+    dest: ./.gitattributes
+  - source: ./.github
+    dest: ./.github
+  - source: ./.gitignore
+    dest: ./.gitignore
+  - source: ./.mailmap
+    dest: ./.mailmap
+  - source: ./CONTRIBUTING.md
+    dest: ./CONTRIBUTING.md
+  - source: ./COPYING
+    dest: ./COPYING
+  - source: ./Manual.md
+    dest: ./Manual.md
+  - source: ./README.md
+    dest: ./README.md
+  - source: ./common
+    dest: ./common
+  - source: ./etc
+    dest: ./etc
+  - source: ./srcpkgs
+    dest: ./srcpkgs
+  - source: ./xbps-src
+    dest: ./xbps-src
     with:
       BRANCH_PREFIX: void
 
