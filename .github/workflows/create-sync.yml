@@ -30,7 +30,7 @@ jobs:
           done
           #echo "    dest: void/" >> .github/sync.yml
           echo "    with:" >> .github/sync.yml
-          echo "      GH_PAT: ${{ secrets.TOKEN }}" >> .github/sync.yml
+          echo '      GH_PAT: ${{ secrets.TOKEN }}' >> .github/sync.yml
           echo "      BRANCH_PREFIX: void" >> .github/sync.yml
           echo '' >> .github/sync.yml
           echo "Makrennel/hyprland-void@master:" >> .github/sync.yml
@@ -42,7 +42,7 @@ jobs:
           done
           #echo "    dest: hyprland/" >> .github/sync.yml
           echo "    with:" >> .github/sync.yml
-          echo "      GH_PAT: ${{ secrets.TOKEN }}" >> .github/sync.yml
+          echo '      GH_PAT: ${{ secrets.TOKEN }}' >> .github/sync.yml
           echo "      BRANCH_PREFIX: hyprland" >> .github/sync.yml
           echo '' >> .github/sync.yml
           echo "index-0/librewolf-void@master:" >> .github/sync.yml
@@ -54,7 +54,7 @@ jobs:
           done
           #echo "    dest: librewolf/" >> .github/sync.yml
           echo "    with:" >> .github/sync.yml
-          echo "      GH_PAT: ${{ secrets.TOKEN }}" >> .github/sync.yml
+          echo '      GH_PAT: ${{ secrets.TOKEN }}' >> .github/sync.yml
           echo "      BRANCH_PREFIX: librewolf" >> .github/sync.yml
           echo '' >> .github/sync.yml
           echo "mobinmob/abyss-packages@main:" >> .github/sync.yml
@@ -66,7 +66,7 @@ jobs:
           done
           #echo "    dest: abyss/" >> .github/sync.yml
           echo "    with:" >> .github/sync.yml
-          echo "      GH_PAT: ${{ secrets.TOKEN }}" >> .github/sync.yml
+          echo '      GH_PAT: ${{ secrets.TOKEN }}' >> .github/sync.yml
           echo "      BRANCH_PREFIX: abyss" >> .github/sync.yml
           echo 'Done'
       - name: push
