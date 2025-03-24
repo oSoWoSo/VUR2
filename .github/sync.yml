@@ -1,23 +1,27 @@
 void-linux/void-packages@master:
-  - source: ./*
+  - source:
+    "$VOID"
     dest: void/
     with:
       BRANCH_PREFIX: void
 
 Makrennel/hyprland-void@master:
-  - source: ./*
+  - source:
+    "$HYPRLAND"
     dest: hyprland/
     with:
       BRANCH_PREFIX: hyprland
 
 index-0/librewolf-void@master:
-  - source: ./*
+  - source:
+    "$LIBREWOLF"
     dest: librewolf/
     with:
       BRANCH_PREFIX: librewolf
 
 mobinmob/abyss-packages@main:
-  - source: ./*
+  - source:
+    "$ABYSS"
     dest: abyss/
     with:
       BRANCH_PREFIX: abyss
