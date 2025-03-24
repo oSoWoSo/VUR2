@@ -11,7 +11,7 @@ Makrennel/hyprland-void@master:
       BRANCH_PREFIX: hyprland
 
 index-0/librewolf-void@master:
-  - source: */**
+  - source: ./**
     dest: librewolf/
     with:
       BRANCH_PREFIX: librewolf
