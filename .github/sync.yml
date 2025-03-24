@@ -5,7 +5,7 @@ void-linux/void-packages@master:
       BRANCH_PREFIX: void
 
 Makrennel/hyprland-void@master:
-  - source: ./*
+  - source: ./**
     dest: hyprland/
     with:
       BRANCH_PREFIX: hyprland
