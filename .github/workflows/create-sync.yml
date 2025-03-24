@@ -33,7 +33,8 @@ jobs:
           echo "Makrennel/hyprland-void@master:" >> .github/sync.yml
           #echo "  - source:" >> .github/sync.yml
           for item in $HYPRLAND; do
-            echo "  - $item" >> .github/sync.yml
+            echo "  - source: $item" >> .github/sync.yml
+            echo "    dest: $item" >> .github/sync.yml
           done
           echo "    dest: hyprland/" >> .github/sync.yml
           echo "    with:" >> .github/sync.yml
