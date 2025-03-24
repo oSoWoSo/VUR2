@@ -1,38 +1,40 @@
 void-linux/void-packages@master:
   - source:
-    .dockerignore
-.editorconfig
-.gitattributes
-.github
-.gitignore
-.mailmap
-CONTRIBUTING.md
-COPYING
-Manual.md
-README.md
-common
-etc
-srcpkgs
-xbps-src
+    - .dockerignore
+    - .editorconfig
+    - .gitattributes
+    - .github
+    - .gitignore
+    - .mailmap
+    - CONTRIBUTING.md
+    - COPYING
+    - Manual.md
+    - README.md
+    - common
+    - etc
+    - srcpkgs
+    - xbps-src
     dest: void/
     with:
 BRANCH_PREFIX: void
 
 Makrennel/hyprland-void@master:
-  - source: .github
-COPYING
-README.md
-common
-scripts
-srcpkgs
+  - source:
+   - .github
+   - COPYING
+   - README.md
+   - common
+   - scripts
+   - srcpkgs
     dest: hyprland/
     with:
       BRANCH_PREFIX: hyprland
 
 index-0/librewolf-void@master:
-  - source: .github
-README.md
-srcpkgs
+  - source:
+    - .github
+    - README.md
+    - srcpkgs
     dest: librewolf/
     with:
       BRANCH_PREFIX: librewolf
