@@ -19,7 +19,7 @@ jobs:
           echo "$HYPRLAND"
           LIBREWOLF=$(curl https://api.github.com/repos/index-0/librewolf-void/contents | jq -r '.[] | "\(.name) (\(.type))"' | cut -d' ' -f1)
           echo "$LIBREWOLF"
-          ABYSS=$(curl https://api.github.com/repos/mobinmob/abyss-packages/contents | jq -r '.[] | "\(.name) (\(.type))"' | cut -d' ' -f1)
+          ABYSS=$(curl https://api.github.com/repos/mobinmob/abyss-packages/contents | jq -r '.[] | "\(.name) (\(.type))"' | grep '(dir)' | cut -d' ' -f1)
           echo "$ABYSS"
           echo "void-linux/void-packages@master:" > .github/sync.yml
           echo "  - source:" >> .github/sync.yml
@@ -49,8 +49,8 @@ jobs:
           echo '' >> .github/sync.yml
           echo "mobinmob/abyss-packages@main:" >> .github/sync.yml
           echo "  - source:" >> .github/sync.yml
-          for item in $ABYSS; do
-            echo "    - $item" >> .github/sync.yml
+          for dir in $ABYSS; do
+            echo "    - $dir" >> .github/sync.yml
           done
           echo "    dest: abyss/" >> .github/sync.yml
           echo "    with:" >> .github/sync.yml
