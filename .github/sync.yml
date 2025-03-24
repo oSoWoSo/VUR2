@@ -28,6 +28,7 @@ void-linux/void-packages@master:
   - source: ../xbps-src
     dest: ./xbps-src
     with:
+      GH_PAT: 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
       BRANCH_PREFIX: void
 
 Makrennel/hyprland-void@master:
@@ -44,6 +45,7 @@ Makrennel/hyprland-void@master:
   - source: srcpkgs
     dest: srcpkgs
     with:
+      GH_PAT: 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
       BRANCH_PREFIX: hyprland
 
 index-0/librewolf-void@master:
@@ -54,6 +56,7 @@ index-0/librewolf-void@master:
   - source: srcpkgs
     dest: srcpkgs
     with:
+      GH_PAT: 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
       BRANCH_PREFIX: librewolf
 
 mobinmob/abyss-packages@main:
@@ -138,4 +141,5 @@ mobinmob/abyss-packages@main:
   - source: zuki-themes/
     dest: zuki-themes
     with:
+      GH_PAT: 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
       BRANCH_PREFIX: abyss
