@@ -5,19 +5,19 @@ void-linux/void-packages@master:
       BRANCH_PREFIX: void
 
 Makrennel/hyprland-void@master:
-  - source: ./**
+  - source: ./*
     dest: hyprland/
     with:
       BRANCH_PREFIX: hyprland
 
 index-0/librewolf-void@master:
-  - source: ./**
+  - source: ./*
     dest: librewolf/
     with:
       BRANCH_PREFIX: librewolf
 
 mobinmob/abyss-packages@main:
-  - source: ./**
+  - source: ./*
     dest: abyss/
     with:
       BRANCH_PREFIX: abyss
