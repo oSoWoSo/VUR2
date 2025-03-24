@@ -1,145 +1,82 @@
 void-linux/void-packages@master:
-  - source: ../.dockerignore
-    dest: ./.dockerignore
-  - source: ../.editorconfig
-    dest: ./.editorconfig
-  - source: ../.gitattributes
-    dest: ./.gitattributes
-  - source: ../.github
-    dest: ./.github
-  - source: ../.gitignore
-    dest: ./.gitignore
-  - source: ../.mailmap
-    dest: ./.mailmap
-  - source: ../CONTRIBUTING.md
-    dest: ./CONTRIBUTING.md
-  - source: ../COPYING
-    dest: ./COPYING
-  - source: ../Manual.md
-    dest: ./Manual.md
-  - source: ../README.md
-    dest: ./README.md
-  - source: ../common
-    dest: ./common
-  - source: ../etc
-    dest: ./etc
-  - source: ../srcpkgs
-    dest: ./srcpkgs
-  - source: ../xbps-src
-    dest: ./xbps-src
+  - .dockerignore
+  - .editorconfig
+  - .gitattributes
+  - .github
+  - .gitignore
+  - .mailmap
+  - CONTRIBUTING.md
+  - COPYING
+  - Manual.md
+  - README.md
+  - common
+  - etc
+  - srcpkgs
+  - xbps-src
     with:
       GH_PAT: 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
       BRANCH_PREFIX: void
 
 Makrennel/hyprland-void@master:
-  - source: .github
-    dest: .github
-  - source: COPYING
-    dest: COPYING
-  - source: README.md
-    dest: README.md
-  - source: common
-    dest: common
-  - source: scripts
-    dest: scripts
-  - source: srcpkgs
-    dest: srcpkgs
+  - .github
+  - COPYING
+  - README.md
+  - common
+  - scripts
+  - srcpkgs
     with:
       GH_PAT: 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
       BRANCH_PREFIX: hyprland
 
 index-0/librewolf-void@master:
-  - source: .github
-    dest: .github
-  - source: README.md
-    dest: README.md
-  - source: srcpkgs
-    dest: srcpkgs
+  - .github
+  - README.md
+  - srcpkgs
     with:
       GH_PAT: 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
       BRANCH_PREFIX: librewolf
 
 mobinmob/abyss-packages@main:
-  - source: AppImageLauncher/
-    dest: AppImageLauncher
-  - source: Webex/
-    dest: Webex
-  - source: adw-gtk3/
-    dest: adw-gtk3
-  - source: base16-geany-git/
-    dest: base16-geany-git
-  - source: base16-xfce4-terminal-git/
-    dest: base16-xfce4-terminal-git
-  - source: basilisk-beta/
-    dest: basilisk-beta
-  - source: betterbird/
-    dest: betterbird
-  - source: brave-browser/
-    dest: brave-browser
-  - source: cudatext/
-    dest: cudatext
-  - source: duplicati-beta-bin/
-    dest: duplicati-beta-bin
-  - source: easybashgui/
-    dest: easybashgui
-  - source: fasd/
-    dest: fasd
-  - source: flat-remix-gtk/
-    dest: flat-remix-gtk
-  - source: font-JetBrainsMono/
-    dest: font-JetBrainsMono
-  - source: font-cascadia-code-ttf/
-    dest: font-cascadia-code-ttf
-  - source: font-mgopen-ttf/
-    dest: font-mgopen-ttf
-  - source: fopnu/
-    dest: fopnu
-  - source: geany-themes-git/
-    dest: geany-themes-git
-  - source: gtkgreet-git/
-    dest: gtkgreet-git
-  - source: materia-theme/
-    dest: materia-theme
-  - source: microsoft-edge-stable/
-    dest: microsoft-edge-stable
-  - source: moksha/
-    dest: moksha
-  - source: nano-syntax-highlighting/
-    dest: nano-syntax-highlighting
-  - source: palemoon/
-    dest: palemoon
-  - source: proggyfonts/
-    dest: proggyfonts
-  - source: quickemu/
-    dest: quickemu
-  - source: seamonkey/
-    dest: seamonkey
-  - source: smartgit/
-    dest: smartgit
-  - source: softmaker-freeoffice-2018/
-    dest: softmaker-freeoffice-2018
-  - source: softmaker-freeoffice-2021/
-    dest: softmaker-freeoffice-2021
-  - source: softmaker-freeoffice-2024/
-    dest: softmaker-freeoffice-2024
-  - source: soulseekqt-bin/
-    dest: soulseekqt-bin
-  - source: teamviewer/
-    dest: teamviewer
-  - source: thunderbird-bin/
-    dest: thunderbird-bin
-  - source: tixati/
-    dest: tixati
-  - source: unmaintained_templates/
-    dest: unmaintained_templates
-  - source: vesktop/
-    dest: vesktop
-  - source: vuescan/
-    dest: vuescan
-  - source: waterfox/
-    dest: waterfox
-  - source: zuki-themes/
-    dest: zuki-themes
+  - AppImageLauncher/
+  - Webex/
+  - adw-gtk3/
+  - base16-geany-git/
+  - base16-xfce4-terminal-git/
+  - basilisk-beta/
+  - betterbird/
+  - brave-browser/
+  - cudatext/
+  - duplicati-beta-bin/
+  - easybashgui/
+  - fasd/
+  - flat-remix-gtk/
+  - font-JetBrainsMono/
+  - font-cascadia-code-ttf/
+  - font-mgopen-ttf/
+  - fopnu/
+  - geany-themes-git/
+  - gtkgreet-git/
+  - materia-theme/
+  - microsoft-edge-stable/
+  - moksha/
+  - nano-syntax-highlighting/
+  - palemoon/
+  - proggyfonts/
+  - quickemu/
+  - seamonkey/
+  - smartgit/
+  - softmaker-freeoffice-2018/
+  - softmaker-freeoffice-2021/
+  - softmaker-freeoffice-2024/
+  - soulseekqt-bin/
+  - teamviewer/
+  - thunderbird-bin/
+  - tixati/
+  - unmaintained_templates/
+  - vesktop/
+  - vuescan/
+  - waterfox/
+  - zuki-themes/
     with:
       GH_PAT: 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
       BRANCH_PREFIX: abyss
