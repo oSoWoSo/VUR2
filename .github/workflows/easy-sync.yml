@@ -10,10 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout
+        uses: actions/checkout@main
       - name: Run Sync
-        with:
-          GH_PAT: ${{ secrets.TOKEN }}
         run: |
           git clone https://github.com/void-linux/void-packages
           cd void-packages
