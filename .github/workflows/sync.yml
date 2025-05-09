@@ -14,5 +14,5 @@ jobs:
 
       - name: Run File Sync
         uses: BetaHuhn/repo-file-sync-action@v1
-        env:
-          GH_PAT: ${{ secrets.TOKEN }}
+        with:
+          - GH_PAT: ${{ secrets.TOKEN }}
