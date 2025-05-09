@@ -11,7 +11,8 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@main
-      - name: Run GitHub File Sync
+
+      - name: Run File Sync
         uses: BetaHuhn/repo-file-sync-action@v1
         with:
           GH_PAT: ${{ secrets.TOKEN }}
