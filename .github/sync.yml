@@ -13,7 +13,7 @@ void-linux/void-packages@master:
   - etc
   - srcpkgs
   - xbps-src
-  BRANCH_PREFIX: void
+BRANCH_PREFIX: void
 
 Makrennel/hyprland-void@master:
   - .github
@@ -22,13 +22,13 @@ Makrennel/hyprland-void@master:
   - common
   - scripts
   - srcpkgs
-  BRANCH_PREFIX: hyprland
+BRANCH_PREFIX: hyprland
 
 index-0/librewolf-void@master:
   - .github
   - README.md
   - srcpkgs
-  BRANCH_PREFIX: librewolf
+BRANCH_PREFIX: librewolf
 
 mobinmob/abyss-packages@main:
   - AppImageLauncher/
@@ -72,4 +72,4 @@ mobinmob/abyss-packages@main:
   - vuescan/
   - waterfox/
   - zuki-themes/
-  BRANCH_PREFIX: abyss
+BRANCH_PREFIX: abyss
