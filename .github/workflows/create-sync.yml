@@ -29,7 +29,7 @@ jobs:
             #echo "    dest: ./$item" >> .github/sync.yml
           done
           #echo "    dest: void/" >> .github/sync.yml
-          echo "with:" >> .github/sync.yml
+          #echo "with:" >> .github/sync.yml
           #echo "  GH_PAT: ${{ secrets.TOKEN }}" >> .github/sync.yml
           echo "  BRANCH_PREFIX: void" >> .github/sync.yml
           echo '' >> .github/sync.yml
@@ -41,7 +41,7 @@ jobs:
             #echo "    dest: $item" >> .github/sync.yml
           done
           #echo "    dest: hyprland/" >> .github/sync.yml
-          echo "with:" >> .github/sync.yml
+          #echo "with:" >> .github/sync.yml
           #echo "  GH_PAT: ${{ secrets.TOKEN }}" >> .github/sync.yml
           echo "  BRANCH_PREFIX: hyprland" >> .github/sync.yml
           echo '' >> .github/sync.yml
@@ -53,7 +53,7 @@ jobs:
             #echo "    dest: $item" >> .github/sync.yml
           done
           #echo "    dest: librewolf/" >> .github/sync.yml
-          echo "with:" >> .github/sync.yml
+          #echo "with:" >> .github/sync.yml
           #echo "  GH_PAT: ${{ secrets.TOKEN }}" >> .github/sync.yml
           echo "  BRANCH_PREFIX: librewolf" >> .github/sync.yml
           echo '' >> .github/sync.yml
@@ -65,7 +65,7 @@ jobs:
             #echo "    dest: $dir" >> .github/sync.yml
           done
           #echo "    dest: abyss/" >> .github/sync.yml
-          echo "with:" >> .github/sync.yml
+          #echo "with:" >> .github/sync.yml
           #echo "  GH_PAT: ${{ secrets.TOKEN }}" >> .github/sync.yml
           echo "  BRANCH_PREFIX: abyss" >> .github/sync.yml
           echo 'Done'
